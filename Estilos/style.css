@@ -3,9 +3,13 @@
   font-family: "Metropolis-Bold";
   src: url(/Fontes/Metropolis/Metropolis-Bold.otf);
 }
+@font-face {
+  font-family: "Metropolis-Medium";
+  src: url(/Fontes/Metropolis/Metropolis-Medium.otf);
+}
 body{
   /* background-color: rgb(29, 29, 29); */
-  font-family: Metropolis-Bold, sans-serif;
+  font-family: Metropolis-Medium, sans-serif;
   list-style: none;
   text-decoration: none;
   margin: 0;
@@ -36,4 +40,44 @@ body{
 }
 .lupa{
   height: 50px;
+}
+/* SLIDER */
+/* Estilos CSS atualizados para o slide de imagens */
+.slide {
+  width: 100%;
+  height: 400px; /* Defina a altura desejada para o slide */
+  overflow: hidden;
+  background-color: #767676;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide-item {
+  flex: 0 0 100%;
+}
+
+.slide-item img {
+  width: 100%;
+  height: 350px;
+}
+
+.slider-controls {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.slider-controls button {
+  background-color: #ccc;
+  border: none;
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.slider-controls button.active {
+  background-color: #555;
+  color: #fff;
 }
