@@ -1,0 +1,39 @@
+/* CONFIGURAÇÕES GLOBAIS */
+@font-face {
+  font-family: "Metropolis-Bold";
+  src: url(/Fontes/Metropolis/Metropolis-Bold.otf);
+}
+body{
+  /* background-color: rgb(29, 29, 29); */
+  font-family: Metropolis-Bold, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* MENU */
+.menu{
+  background-color: rgb(29, 29, 29);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+.menu-lista{
+  display: flex;
+  gap: 50px;
+  font-size: 24px;
+  list-style: none;
+}
+.menu-item-link{
+  text-decoration: none;
+  color: rgba(225, 225, 225, 0.952);
+}
+.logomarca-reduzida{
+  height: 100px;
+}
+.lupa{
+  height: 50px;
+}
