@@ -21,16 +21,21 @@ body{
 .menu{
   background-color: rgb(29, 29, 29);
   height: 100px;
+  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+}
+.sessao-menu-lista{
+  padding-right: 120px;
 }
 .menu-lista{
   display: flex;
   gap: 50px;
   font-size: 24px;
   list-style: none;
+
 }
 .menu-item-link{
   text-decoration: none;
@@ -38,6 +43,7 @@ body{
 }
 .logomarca-reduzida{
   height: 100px;
+  
 }
 .lupa{
   height: 50px;
@@ -97,6 +103,8 @@ body{
 .titulo-sobre{
   text-align: center;
   margin: 0;
+  padding-top: 20px;
+  letter-spacing: 10px;
 }
 .descrição-sobre{
   display: flex;
@@ -129,6 +137,23 @@ body{
   align-items: center;
 }
 
+/* RODAPÉ */
+.sessao-rodape{
+  height: 200px;
+  background-color: black;
+  display: flex;
+  
+}
+.logo-completa{
+  height: 80px;
+}
+.reduzir{
+  height: 80px;
+}
+.lista-rodape{
+  list-style: none;
+}
+
 /* RESPONSIVIDADE */
 
 /* Estilos para dispositivos móveis (até 390px de largura, iPhone 12) */
@@ -137,18 +162,33 @@ body{
   .menu {
     height: 80px;
     padding: 0 5px;
+    
+    
   }
 
   .menu-lista {
     font-size: 18px;
+    
   }
+.sessao-logomarca-reduzida{
 
+}
+.sessao-menu-lista{
+  
+
+}
+.sessao-lupa{
+ 
+
+}
   .logomarca-reduzida {
     height: 80px;
+    
   }
 
   .lupa {
     height: 40px;
+    
   }
 
   .slide {
@@ -168,10 +208,14 @@ body{
   }
   .descrição-sobre{  
     flex-direction: column; 
-    padding: 30px;
+    padding:0 30px;
+    height: 100vh;
   }
   .logo-tipografica-sobre{
     display: none;
+  }
+  .sessao-imagem-sobre{
+   padding-top: 150px;
   }
 
 }
