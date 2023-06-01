@@ -40,8 +40,9 @@ body{
   background-color: rgba(29, 29, 29, 0.7); /* Ajuste a transparência ao rolar */
   height: 50px; /* Defina a altura desejada */
 }
-.nova-imagem {
-  height: 30px; /* Substitua pelo valor de altura desejado para a nova imagem */
+.nova-imagem.reduzida {
+  height: 50px; /* Defina o tamanho desejado para a nova imagem reduzida */
+  transition: height 0.5s; /* Adicione uma transição suave para o tamanho da imagem */
 }
 .sessao-menu-lista{
   padding-right: 120px;

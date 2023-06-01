@@ -51,27 +51,46 @@ window.addEventListener("scroll", function () {
     menu.classList.remove("translucente");
   }
 });
-
-var logoReduzida = document.querySelector(".logomarca-reduzida");
-var originalImageSrc = logoReduzida.getAttribute("src");
-var newImageSrc = "Imagens/menu/elemento Globo.svg"; // Substitua pelo caminho da nova imagem que você deseja usar
-
 window.addEventListener("scroll", function() {
   var currentScrollPos = window.pageYOffset;
+  var logoReduzida = document.querySelector(".logomarca-reduzida");
+  var originalImageSrc = logoReduzida.getAttribute("src");
+  var newImageSrc = "Imagens/menu/elemento Globo.svg"; // Substitua pelo caminho da nova imagem que você deseja usar
 
   if (currentScrollPos > 0) {
     // A página não está no topo
     logoReduzida.setAttribute("src", newImageSrc);
     logoReduzida.style.opacity = "0.8"; // Defina a transparência desejada para o menu quando a página for rolada para baixo
-    logoReduzida.classList.add("nova-imagem");
+    logoReduzida.classList.add("nova-imagem", "reduzida"); // Adicione a classe 'reduzida' para ajustar o tamanho da imagem
 
   } else {
     // A página está no topo
-    logoReduzida.setAttribute("src",originalImageSrc);
+    logoReduzida.setAttribute("src", originalImageSrc);
     logoReduzida.style.opacity = "1"; // Define a opacidade total para o menu quando a página estiver no topo
-    logoReduzida.classList.remove("nova-imagem");
+    logoReduzida.classList.remove("nova-imagem", "reduzida"); // Remova a classe 'reduzida' para voltar ao tamanho original
   }
 });
+
+// var logoReduzida = document.querySelector(".logomarca-reduzida");
+// var originalImageSrc = logoReduzida.getAttribute("src");
+// var newImageSrc = "Imagens/menu/elemento Globo.svg"; // Substitua pelo caminho da nova imagem que você deseja usar
+
+// window.addEventListener("scroll", function() {
+//   var currentScrollPos = window.pageYOffset;
+
+//   if (currentScrollPos > 0) {
+//     // A página não está no topo
+//     logoReduzida.setAttribute("src", newImageSrc);
+//     logoReduzida.style.opacity = "0.8"; // Defina a transparência desejada para o menu quando a página for rolada para baixo
+//     logoReduzida.classList.add("nova-imagem");
+
+//   } else {
+//     // A página está no topo
+//     logoReduzida.setAttribute("src",originalImageSrc);
+//     logoReduzida.style.opacity = "1"; // Define a opacidade total para o menu quando a página estiver no topo
+//     logoReduzida.classList.remove("nova-imagem");
+//   }
+// });
 
 
 slider.addEventListener('mousedown', stopAutoSlide);
