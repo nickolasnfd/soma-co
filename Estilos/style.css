@@ -9,6 +9,7 @@
 }
 body{
   /* background-color: rgb(29, 29, 29); */
+  width: 100vw;
   font-family: Metropolis-Medium, sans-serif;
   list-style: none;
   text-decoration: none;
@@ -48,6 +49,7 @@ body{
   height: 400px; /* Defina a altura desejada para o slide */
   overflow: hidden;
   background-color: #767676;
+  
 }
 
 .slider {
@@ -83,4 +85,85 @@ body{
 }
 .prev-btn,.next-btn{
   display: none;
+}
+/* IMAGEM E TEXTO SOBRE */
+.sessao-titulo{
+  background-color: #d0d0d0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulo-sobre{
+  text-align: center;
+  margin: 0;
+}
+.descrição-sobre{
+  display: flex;
+  justify-content: space-evenly;
+  height: 600px;
+  background-color: #d0d0d0;
+  font-size: 24px;
+  font-family: Metropolis-Medium, sans-serif;
+  line-height: 32px;
+}
+.texto-descritivo{
+  color: black;
+}
+.imagem-sobre{
+  height: 200px;
+  width: 50vw;
+}
+.logo-tipografica-sobre{
+  height: 200px;
+}
+.sessao-descricao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.sessao-imagem-sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RESPONSIVIDADE */
+
+/* Estilos para dispositivos móveis (até 390px de largura, iPhone 12) */
+@media (max-width: 390px) {
+  /* Aplique as modificações de estilo aqui */
+  .menu {
+    height: 80px;
+    padding: 0 5px;
+  }
+
+  .menu-lista {
+    font-size: 18px;
+  }
+
+  .logomarca-reduzida {
+    height: 80px;
+  }
+
+  .lupa {
+    height: 40px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .slide-item img {
+    height: 250px;
+  }
+
+  .slider-controls {
+    margin-top: 5px;
+  }
+
+  .slider-controls button {
+    padding: 3px 8px;
+  }
 }

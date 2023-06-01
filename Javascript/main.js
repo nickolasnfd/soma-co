@@ -5,7 +5,7 @@ const nextBtn = document.querySelector('.next-btn');
 
 
 let slidePosition = 0;
-const slideWidth = slider.offsetWidth;
+let slideWidth = slider.offsetWidth;
 let intervalId;
 // criando as funções dinamicas do slide
 function updateSlidePosition() {
@@ -36,10 +36,17 @@ function startAutoSlide() {
 function stopAutoSlide() {
   clearInterval(intervalId);
 }
+function updateSlideWidth() {
+  slideWidth = slider.offsetWidth;
+  slidePosition = 0;
+  updateSlidePosition();
+}
 
 slider.addEventListener('mousedown', stopAutoSlide);
 slider.addEventListener('mouseup', startAutoSlide);
+window.addEventListener('resize', updateSlideWidth);
 
+updateSlidePosition();
 startAutoSlide();
 
 //PARA DEIXAR O SLIDER FULL AUTOMATICO 
