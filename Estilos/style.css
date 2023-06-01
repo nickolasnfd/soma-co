@@ -259,12 +259,22 @@ body{
     
     align-items: center;
   }
-  .newsletter{
+  .newsletter, .info{
+    display: flex;
+    flex-direction: column;
+   
+    
+    letter-spacing: 5px;
     text-align: center;
   }
+  
   .info {
     margin-bottom: 10px;
     text-align: center;
+    
+  }
+  .paragrafo-desconto{
+    line-height: 20px;
   }
   .logo-completa{
   display: none;
