@@ -101,7 +101,7 @@ body{
 .descrição-sobre{
   display: flex;
   justify-content: space-evenly;
-  height: 600px;
+  height: 100vh;
   background-color: #d0d0d0;
   font-size: 24px;
   font-family: Metropolis-Medium, sans-serif;
@@ -166,4 +166,63 @@ body{
   .slider-controls button {
     padding: 3px 8px;
   }
+  .descrição-sobre{  
+    flex-direction: column; 
+    padding: 30px;
+  }
+  .logo-tipografica-sobre{
+    display: none;
+  }
+
 }
+/* RESPONSIVIDADE */
+
+/* Estilos para dispositivos móveis (até 768px de largura, tablets) */
+@media (max-width: 768px) {
+  /* Aplique as modificações de estilo aqui */
+  .menu {
+    height: 80px;
+    padding: 0 15px;
+  }
+
+  .menu-lista {
+    font-size: 20px;
+  }
+
+  .logomarca-reduzida {
+    height: 80px;
+  }
+
+  .lupa {
+    height: 40px;
+  }
+
+  .slide {
+    height: 300px;
+  }
+
+  .slide-item img {
+    height: 250px;
+  }
+
+  .slider-controls {
+    margin-top: 5px;
+  }
+
+  .slider-controls button {
+    padding: 3px 8px;
+  }
+  .descrição-sobre{  
+    flex-direction: column; 
+    padding: 30px;
+  }
+  .logo-tipografica-sobre{
+    display: none;
+  }
+  .imagem-sobre{
+    height: 150px;
+    width: 100%;
+  }
+}
+
+
