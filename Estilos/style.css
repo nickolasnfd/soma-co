@@ -81,3 +81,6 @@ body{
   background-color: #555;
   color: #fff;
 }
+.prev-btn,.next-btn{
+  display: none;
+}
