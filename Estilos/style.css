@@ -16,6 +16,7 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 /* MENU */
 .menu{
@@ -114,6 +115,7 @@ body{
   font-size: 24px;
   font-family: Metropolis-Medium, sans-serif;
   line-height: 32px;
+  padding: 0 30px;
 }
 .texto-descritivo{
   color: black;
@@ -131,6 +133,9 @@ body{
   align-items: center;
   justify-content: center;
 }
+.texto-descritivo p{
+  text-align: center;
+}
 .sessao-imagem-sobre{
   display: flex;
   justify-content: center;
@@ -140,19 +145,43 @@ body{
 /* RODAPÉ */
 .sessao-rodape{
   height: 200px;
+  padding: 20px 30px;
   background-color: black;
   display: flex;
+  color: white;
+  justify-content: space-between;
+  text-align: center;
+  
+  
   
 }
-.logo-completa{
-  height: 80px;
+.sessao-logo-completa{
+  height: 100px;
 }
+
 .reduzir{
   height: 80px;
 }
 .lista-rodape{
   list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
+.newsletter, .info{
+  display: flex;
+  flex-direction: column;
+  line-height: 12px;
+  padding-top:20px 0;
+  letter-spacing: 5px;
+  text-align: center;
+}
+.info{
+  padding-right: 20px;
+}
+
+
+
 
 /* RESPONSIVIDADE */
 
@@ -162,32 +191,26 @@ body{
   .menu {
     height: 80px;
     padding: 0 5px;
-    
+    justify-content: center;
     
   }
 
   .menu-lista {
     font-size: 18px;
+    padding: 0;
     
   }
-.sessao-logomarca-reduzida{
-
-}
-.sessao-menu-lista{
-  
-
-}
-.sessao-lupa{
- 
-
-}
+  .sessao-menu-lista{
+    padding: 0;
+  }
   .logomarca-reduzida {
     height: 80px;
+    display: none;
     
   }
 
   .lupa {
-    height: 40px;
+    display: none;
     
   }
 
@@ -215,7 +238,36 @@ body{
     display: none;
   }
   .sessao-imagem-sobre{
-   padding-top: 150px;
+   
+  }
+  .texto-descritivo p{
+    text-align: center;
+  }
+  .sessao-rodape {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 30px;
+  }
+
+  .sessao-logo-completa {
+    margin-bottom: 20px;
+  }
+
+  .lista-rodape {
+    
+    align-items: center;
+  }
+  .newsletter{
+    text-align: center;
+  }
+  .info {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .logo-completa{
+  display: none;
   }
 
 }
