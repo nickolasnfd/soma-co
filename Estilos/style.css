@@ -16,17 +16,32 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(29, 29, 29);
   
 }
 /* MENU */
 .menu{
   background-color: rgb(29, 29, 29);
   height: 100px;
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 30px;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ transition: height 0.3s ease, background-color 0.3s ease;
+ 
+  z-index: 999;
+
+}
+.menu.translucente {
+  background-color: rgba(29, 29, 29, 0.7); /* Ajuste a transparência ao rolar */
+  height: 50px; /* Defina a altura desejada */
+}
+.nova-imagem {
+  height: 30px; /* Substitua pelo valor de altura desejado para a nova imagem */
 }
 .sessao-menu-lista{
   padding-right: 120px;
@@ -48,6 +63,7 @@ body{
 }
 .lupa{
   height: 50px;
+  padding-right: 50px;
 }
 /* SLIDER */
 /* Estilos CSS atualizados para o slide de imagens */
@@ -56,6 +72,7 @@ body{
   height: 400px; /* Defina a altura desejada para o slide */
   overflow: hidden;
   background-color: #767676;
+  margin-top: 100px;
   
 }
 
