@@ -55,7 +55,8 @@ body {
 
 /* Estilos da sessão do menu */
 .sessao-menu-lista {
-  padding-right: 120px;
+  
+  
 }
 
 .menu-lista {
@@ -244,6 +245,7 @@ body {
 
   .sessao-menu-lista {
     padding: 0;
+    
   }
 
   .logomarca-reduzida {
