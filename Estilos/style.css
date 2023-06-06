@@ -119,8 +119,9 @@ body {
 }
 
 .slide-item img {
-  width: 100vw;
-  height: 350px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .slider-controls {
@@ -180,7 +181,8 @@ body {
 
 .imagem-sobre {
   padding: 20px;
-  width: 40vw;
+  width: 50vw;
+  object-fit: contain;
 }
 
 .logo-tipografica-sobre {
@@ -291,7 +293,9 @@ body {
   }
 
   .slide-item img {
-    height: 250px;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
   }
 
   .slider-controls {
@@ -384,7 +388,10 @@ body {
   }
 
   .slide-item img {
-    height: 250px;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+  
   }
 
   .slider-controls {
