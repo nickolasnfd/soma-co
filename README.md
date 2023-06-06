@@ -42,4 +42,3 @@ Contribuições são bem-vindas! Se você tiver sugestões de melhorias, correç
 Este projeto está licenciado sob a licença ByteBox. Consulte o arquivo LICENSE para obter mais informações.
 
 
-
