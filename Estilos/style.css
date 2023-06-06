@@ -218,9 +218,10 @@ body {
   display: flex;
   flex-direction: column;
   line-height: 12px;
-  
+  justify-content: space-evenly;
   letter-spacing: 5px;
   text-align: center;
+  
 }
 
 
@@ -294,8 +295,8 @@ body {
   .sessao-rodape {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
+    justify-content: space-between;
+    height: 50vh;
     padding: 20px 5px;
   }
 
@@ -314,7 +315,7 @@ body {
 
   .newsletter,
   .info {
-    line-height: 10px;
+    line-height: 20px;
     padding-top: 0;
     letter-spacing: 3px;
   }
@@ -386,8 +387,8 @@ body {
   .sessao-rodape {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
+    justify-content: space-between;
+    height: 50vh;
     padding: 20px 5px;
   }
 
@@ -406,7 +407,7 @@ body {
 
   .newsletter,
   .info {
-    line-height: 10px;
+    line-height: 20px;
     padding-top: 0;
     letter-spacing: 3px;
   }
