@@ -210,9 +210,14 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
-  
 }
-
+.paragrafo-desconto,.paragrafo-email{
+  background-color: #d0d0d064;
+  color: white;
+}
+.paragrafo-desconto{
+  line-height: 16px;
+}
 .logo-rodape{
   
   width: 33vw;
