@@ -10,14 +10,17 @@
 }
 
 /* Estilos do corpo da página */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   width: 100vw;
   font-family: Metropolis-Medium, sans-serif;
   list-style: none;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  
   background-color: rgb(29, 29, 29);
 }
 
@@ -192,6 +195,7 @@ body {
   display: flex;
   color: white;
   justify-content: space-between;
+  
   text-align: center;
 }
 
@@ -209,6 +213,12 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.paragrafo-email, .paragrafo-desconto{
+  background-color: #ccc;
+  padding: 2px ;
+  width: 30vw;
+  
+}
 
 .newsletter,
 .info {
@@ -218,6 +228,7 @@ body {
   padding-top: 20px 0;
   letter-spacing: 5px;
   text-align: center;
+  justify-content: center;
 }
 
 .info {
@@ -233,8 +244,8 @@ body {
   /* Menu */
   .menu {
     height: 80px;
-    padding: 0 5px;
-    justify-content: center;
+    padding: 0 5px 0 2px;
+    justify-content: space-between;
   }
 
   .menu-lista {
@@ -297,6 +308,9 @@ body {
     height: auto;
     padding: 20px 5px;
   }
+  .logo-completa{
+    height: 80px;
+  }
 
   .lista-rodape {
     gap: 20px;
@@ -309,6 +323,10 @@ body {
   .reduzir {
     height: auto;
     margin-bottom: 10px;
+  }
+  .paragrafo-email{
+    background-color: #ccc;
+    padding: 2px ;
   }
 
   .newsletter,
@@ -326,13 +344,16 @@ body {
   /* Menu */
   .menu {
     height: 80px;
-    padding: 0 5px;
-    justify-content: center;
+    padding: 0;
   }
 
   .menu-lista {
+    width: 100vw;
     font-size: 18px;
     padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    box-sizing: border-box;
   }
 
   .sessao-menu-lista {
@@ -388,6 +409,9 @@ body {
     justify-content: center;
     height: auto;
     padding: 20px 5px;
+  }
+  .logo-completa{
+    height: 80px;
   }
 
   .lista-rodape {
