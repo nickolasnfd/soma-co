@@ -17,8 +17,11 @@
   font-family: Metropolis-Medium, sans-serif;
   list-style: none;
   text-decoration: none;
- ;
 }
+a p {
+  color: white;
+}
+
 body {
   
   background-color: rgb(29, 29, 29)
@@ -207,7 +210,9 @@ body {
   display: flex;
   justify-content: center;
   gap: 50px;
+  
 }
+
 .logo-rodape{
   
   width: 33vw;
@@ -221,6 +226,7 @@ body {
   justify-content: space-evenly;
   letter-spacing: 5px;
   text-align: center;
+  
   
 }
 
