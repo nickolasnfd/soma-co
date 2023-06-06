@@ -231,8 +231,6 @@ body {
   justify-content: space-evenly;
   letter-spacing: 5px;
   text-align: center;
-  
-  
 }
 
 
@@ -312,7 +310,11 @@ body {
   }
 
   .lista-rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
+    margin-top: 20px;
   }
 
   .sessao-logo-completa {
@@ -320,7 +322,7 @@ body {
   }
 
   .reduzir {
-    height: auto;
+    height: 50px;
     margin-bottom: 10px;
   }
 
@@ -412,7 +414,7 @@ body {
   }
 
   .reduzir {
-    height: auto;
+    height: 50px;
     margin-bottom: 10px;
   }
 
