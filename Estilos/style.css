@@ -10,15 +10,18 @@
 }
 
 /* Estilos do corpo da página */
-body {
-  width: 100vw;
-  font-family: Metropolis-Medium, sans-serif;
-  list-style: none;
-  text-decoration: none;
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: rgb(29, 29, 29);
+  font-family: Metropolis-Medium, sans-serif;
+  list-style: none;
+  text-decoration: none;
+ ;
+}
+body {
+  
+  background-color: rgb(29, 29, 29)
 }
 
 /* MENU */
@@ -28,7 +31,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 30px;
   position: fixed;
   top: 0;
   left: 0;
@@ -54,13 +56,11 @@ body {
 }
 
 /* Estilos da sessão do menu */
-.sessao-menu-lista {
-  padding-right: 120px;
-}
 
 .menu-lista {
   display: flex;
   gap: 50px;
+  padding-right: 50px;
   font-size: 24px;
   list-style: none;
 }
@@ -76,7 +76,6 @@ body {
 
 .lupa {
   height: 50px;
-  padding-right: 50px;
 }
 
 /* SLIDER */
@@ -100,7 +99,7 @@ body {
 }
 
 .slide-item img {
-  width: 100%;
+  width: 100vw;
   height: 350px;
 }
 
@@ -151,7 +150,7 @@ body {
   font-size: 24px;
   font-family: Metropolis-Medium, sans-serif;
   line-height: 32px;
-  padding: 0 30px;
+  /* padding: 0 30px; */
 }
 
 .texto-descritivo {
