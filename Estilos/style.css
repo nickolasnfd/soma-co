@@ -175,11 +175,12 @@ body {
 
 .texto-descritivo {
   color: var(--cor-texto-descritivo);
+  padding: 20px;
 }
 
 .imagem-sobre {
-  height: 200px;
-  width: 50vw;
+  padding: 20px;
+  width: 40vw;
 }
 
 .logo-tipografica-sobre {
