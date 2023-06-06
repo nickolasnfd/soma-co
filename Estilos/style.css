@@ -50,8 +50,9 @@ body {
 /* Estilos da nova imagem reduzida */
 .nova-imagem.reduzida {
   height: 50px;
+  padding-left: 50px;
   /* Defina o tamanho desejado para a nova imagem reduzida */
-  transition: height 0.5s;
+  transition: height .5s;
   /* Adicione uma transição suave para o tamanho da imagem */
 }
 
@@ -186,7 +187,7 @@ body {
 /* RODAPÉ */
 .sessao-rodape {
   height: 200px;
-  padding: 20px 30px;
+  padding: 20px 0;
   background-color: black;
   display: flex;
   color: white;
@@ -194,10 +195,9 @@ body {
   text-align: center;
 }
 
-.sessao-logo-completa {
-  height: 100px;
+.logo-completa{
+  height: 150px;
 }
-
 .reduzir {
   height: 80px;
 }
@@ -208,20 +208,22 @@ body {
   justify-content: center;
   gap: 50px;
 }
+.logo-rodape{
+  
+  width: 33vw;
+}
 
 .newsletter,
 .info {
   display: flex;
   flex-direction: column;
   line-height: 12px;
-  padding-top: 20px 0;
+  
   letter-spacing: 5px;
   text-align: center;
 }
 
-.info {
-  padding-right: 20px;
-}
+
 
 /* RESPONSIVIDADE */
 
