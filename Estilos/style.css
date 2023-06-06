@@ -8,6 +8,22 @@
   font-family: "Metropolis-Medium";
   src: url(/Fontes/Metropolis/Metropolis-Medium.otf);
 }
+/* Cores */
+:root {
+  --cor-fundo: rgb(29, 29, 29);
+  --cor-menu: rgb(29, 29, 29);
+  --cor-menu-translucido: rgba(29, 29, 29, 0.7);
+  --cor-texto-menu: rgba(225, 225, 225, 0.952);
+  --cor-fundo-slide: #767676;
+  --cor-fundo-titulo-sobre: #d0d0d0;
+  --cor-texto-descricao: #d0d0d0;
+  --cor-texto-descritivo: black;
+  --cor-fundo-rodape: black;
+  --cor-texto-rodape: white;
+  --cor-fundo-paragrafo: #d0d0d064;
+  --cor-texto-paragrafo: white;
+}
+
 
 /* Estilos do corpo da página */
 *{
@@ -24,12 +40,12 @@ a p {
 
 body {
   
-  background-color: rgb(29, 29, 29)
+  background-color: var(--cor-fundo);
 }
 
 /* MENU */
 .menu {
-  background-color: rgb(29, 29, 29);
+  background-color: var(--cor-menu);
   height: 100px;
   display: flex;
   justify-content: space-between;
@@ -44,7 +60,7 @@ body {
 
 /* Estilos do menu quando está translúcido */
 .menu.translucente {
-  background-color: rgba(29, 29, 29, 0.7);
+  background-color: var(--cor-menu-translucido);
   /* Ajuste a transparência ao rolar */
   height: 50px;
   /* Defina a altura desejada */
@@ -71,7 +87,7 @@ body {
 
 .menu-item-link {
   text-decoration: none;
-  color: rgba(225, 225, 225, 0.952);
+  color: var(--cor-texto-menu);
 }
 
 .logomarca-reduzida {
@@ -89,7 +105,7 @@ body {
   height: 400px;
   /* Defina a altura desejada para o slide */
   overflow: hidden;
-  background-color: #767676;
+  background-color: var(--cor-fundo-slide);
   margin-top: 100px;
 }
 
@@ -103,8 +119,9 @@ body {
 }
 
 .slide-item img {
-  width: 100vw;
-  height: 350px;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
 }
 
 .slider-controls {
@@ -132,7 +149,7 @@ body {
 
 /* IMAGEM E TEXTO SOBRE */
 .sessao-titulo {
-  background-color: #d0d0d0;
+  background-color: var(--cor-fundo-titulo-sobre);
   height: 50px;
   display: flex;
   align-items: center;
@@ -150,7 +167,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   height: 100vh;
-  background-color: #d0d0d0;
+  background-color: var(--cor-texto-descricao);
   font-size: 24px;
   font-family: Metropolis-Medium, sans-serif;
   line-height: 32px;
@@ -158,12 +175,14 @@ body {
 }
 
 .texto-descritivo {
-  color: black;
+  color: var(--cor-texto-descritivo);
+  padding: 20px;
 }
 
 .imagem-sobre {
-  height: 200px;
+  padding: 20px;
   width: 50vw;
+  object-fit: contain;
 }
 
 .logo-tipografica-sobre {
@@ -191,9 +210,9 @@ body {
 .sessao-rodape {
   height: 200px;
   padding: 20px 0;
-  background-color: black;
+  background-color: var(--cor-fundo-rodape);
+  color: var(--cor-texto-rodape);
   display: flex;
-  color: white;
   justify-content: space-between;
   text-align: center;
 }
@@ -212,8 +231,8 @@ body {
   gap: 50px;
 }
 .paragrafo-desconto,.paragrafo-email{
-  background-color: #d0d0d064;
-  color: white;
+  background-color: var(--cor-fundo-paragrafo);
+  color: var(--cor-texto-paragrafo);
 }
 .paragrafo-desconto{
   line-height: 16px;
@@ -272,7 +291,9 @@ body {
   }
 
   .slide-item img {
-    height: 250px;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
   }
 
   .slider-controls {
@@ -369,7 +390,10 @@ body {
   }
 
   .slide-item img {
-    height: 250px;
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+  
   }
 
   .slider-controls {
